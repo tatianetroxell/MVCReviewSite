@@ -1,0 +1,31 @@
+﻿@model MVCReviewSite.Models.Review
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <hr />
+    <div class="row">
+        <div class="col-md-12">
+            <div class="thumbnail">
+                <div class="caption">
+                    <p><strong>@Html.DisplayNameFor(model => model.Name):</strong>&nbsp;@Html.DisplayFor(model => model.Name)</p>
+                    
+                    <p><strong>@Html.DisplayNameFor(model => model.Title):</strong>&nbsp;@Html.DisplayFor(model => model.Title)</p>
+                    <p><strong>@Html.DisplayNameFor(model => model.Content):</strong>&nbsp;@Html.DisplayFor(model => model.Content)</p>
+                    <p><strong>@Html.DisplayNameFor(model => model.PublishedDate):</strong>&nbsp;@Html.DisplayFor(model => model.PublishedDate)</p>
+                    <p><strong>@Html.DisplayNameFor(model => model.Location):</strong>&nbsp;@Html.DisplayFor(model => model.Location)</p>
+                    <p><strong>@Html.DisplayNameFor(model => model.Category):</strong>&nbsp;@Html.DisplayFor(model => model.Category.Name)</p>
+                    <p>
+                        @Html.ActionLink("Edit", "Edit", new { id = Model.ReviewID }) |
+                        @Html.ActionLink("Back to List", "Index")
+                    </p>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+                    

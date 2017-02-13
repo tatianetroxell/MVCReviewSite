@@ -1,0 +1,31 @@
+﻿@model IEnumerable<MVCReviewSite.Models.Review>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Reviews</h2>
+
+<p>
+    @Html.ActionLink("Write a Review", "Create")
+</p>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-4 col-sm-3">
+            <div class="thumbnail">
+                <div class="caption">
+                    <h4>@Html.DisplayFor(modelItem => item.Title)</h4>
+                    <p>@Html.DisplayFor(modelItem => item.Content)</p>
+                    <p class="textRight"><strong>@Html.DisplayFor(modelItem => item.Name)</strong></p>
+                    <p class="textRight">@Html.DisplayFor(modelItem => item.PublishedDate)</p>
+                    <p class="textRight">@Html.DisplayFor(modelItem => item.Location)</p>
+                    <p class="textRight"><strong>@Html.DisplayNameFor(model => model.Category):</strong>&nbsp; @Html.DisplayFor(modelItem => item.Category.Name)</p>
+                    <p>@Html.ActionLink("Details", "Details", new { id = item.ReviewID }, new { @class = "btn btn-primary pull-right", id = "button-right-corner", role = "button" })</p>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+    }
+</div>

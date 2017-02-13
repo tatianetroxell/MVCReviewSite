@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    color: #1c304a;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -21,4 +22,68 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+#navTop {
+    color: #FFFFFF;
+    background-color: #1c304a;
+}
+
+#navTop a {
+    color: #FFF6F0;
+}
+
+#navTop a:hover {
+    color: #b1c6e2;
+}
+
+.thumbnail {
+    border-color: #FFFFFF;
+    height: 500px;
+}
+
+.caption {
+    background-color: #b1c6e2;
+    border: 1px solid #19275e;
+    border-radius: 10px;
+}
+
+/*Align Name, Published Date, Location, Category(inside caption class)*/
+p.textRight{
+    text-align: right;
+}
+
+
+/*Align Details Button (inside caption class)*/
+#button-right-corner {
+    background-color: #1c304a;
+    position: relative;
+    right:    5px;
+    bottom:  5px;
+}
+
+/*Footer*/
+.container-fluid {
+    background-color: #1c304a;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    margin-bottom:0px;
+}
+
+hr {
+    border-color: #1c304a;
+}
+
+.form-control {
+    border-color: #1c304a;
+}
+
+.btn-default {
+    color: #FFFFFF;
+    background-color: #1c304a;
 }
